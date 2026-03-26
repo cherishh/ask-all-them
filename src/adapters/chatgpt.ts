@@ -16,7 +16,7 @@ export class ChatGPTAdapter implements SiteAdapter {
     const editor = document.querySelector<HTMLDivElement>('#prompt-textarea');
     if (!editor) return;
     editor.focus();
-    editor.innerHTML = `<p>${content}</p>`;
+    editor.textContent = content;
     editor.dispatchEvent(new InputEvent('input', { bubbles: true }));
   }
 

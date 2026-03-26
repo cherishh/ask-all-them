@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { SUPPORTED_SITES } from '@/adapters/registry';
+import { SUPPORTED_SITES } from '@/adapters/sites';
 import type { StatusResponseMessage } from '@/utils/messaging';
 
 interface TabStatus {
